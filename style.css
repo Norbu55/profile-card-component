@@ -1,0 +1,129 @@
+@import url(https://fonts.google.com/specimen/Kumbh+Sans);
+
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(185, 75%, 39%);
+  height: 100vh;
+  font-family: Kumbh Sans, sans-serif;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.background-main-image {
+  height: 100vh;
+  overflow: hidden;
+
+  position: relative;
+}
+.background-sub-image {
+  position: absolute;
+}
+.top {
+  position: absolute;
+  top: -450px;
+  left: -300px;
+}
+.bottom {
+  position: absolute;
+  bottom: -550px;
+  right: -250px;
+}
+main {
+  height: 400px;
+  width: 360px;
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+}
+.card-main-bg-img {
+  max-width: 100%;
+  position: relative;
+}
+.card-sub-bg-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.card-bg-img {
+  min-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.container {
+  position: relative;
+}
+.victor-img {
+  border-radius: 50%;
+  margin-left: 130px;
+  margin-top: -55px;
+  position: absolute;
+  border: 4px solid white;
+}
+
+.para-1 {
+  display: flex;
+  justify-content: center;
+  text-indent: 20px;
+  margin-top: 60px;
+  margin-left: -20px;
+}
+.name {
+  font-size: 18px;
+  font-weight: 700;
+  color: hsl(229, 23%, 23%);
+}
+.number {
+  color: hsl(227, 10%, 46%);
+}
+.country {
+  color: hsl(227, 10%, 46%);
+  text-align: center;
+  padding-top: 10px;
+}
+.views {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  /* margin-top: -5px; */
+  margin-top: 15px;
+}
+h2 {
+  color: hsl(229, 23%, 23%);
+}
+p {
+  color: hsl(0, 0%, 59%);
+}
+hr {
+  margin-top: 40px;
+  color: hsl(227, 10%, 46%);
+}
+
+@media screen (max-width: 375) {
+  .background-main-image {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+  }
+  .background-sub-image {
+    position: absolute;
+  }
+  .top {
+    position: absolute;
+    top: -10px;
+    left: -30px;
+  }
+  .bottom {
+    position: absolute;
+    bottom: -550px;
+    right: -250px;
+  }
+}
